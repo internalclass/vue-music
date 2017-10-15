@@ -1,0 +1,16 @@
+.tab {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px; }
+  .tab .tab-item {
+    flex: 1;
+    text-align: center; }
+    .tab .tab-item .tab-link {
+      padding-bottom: 5px;
+      color: rgba(255, 255, 255, 0.5); }
+      .tab .tab-item .tab-link .router-link-active .tab-link {
+        color: #ffcd32;
+        border-bottom: 2px solid #ffcd32; }
+
+/*# sourceMappingURL=tab.css.map */

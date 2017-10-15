@@ -1,0 +1,19 @@
+.m-header {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffcd32;
+  .text, .icon {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .icon {
+    margin: 6px 9px 0 0;
+    width: 30px;
+    height: 32px;
+    background-size: 30px 32px;
+  }
+}

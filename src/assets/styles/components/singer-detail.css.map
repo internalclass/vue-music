@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,wCAAyC;EACvC,UAAU,EAAE,QACd;;AACA,6BAA8B;EAC5B,SAAS,EAAE,uBACb",
+"sources": ["singer-detail.scss"],
+"names": [],
+"file": "singer-detail.css"
+}

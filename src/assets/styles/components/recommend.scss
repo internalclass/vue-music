@@ -1,0 +1,64 @@
+.recommend {
+  position: fixed;
+  width: 100%;
+  top: 88px;
+  bottom: 0;
+  .recommend-content {
+    height: 100%;
+    overflow: hidden;
+  }
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .recommend-list {
+    .list-title {
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      font-size: 14px;
+      color: #ffcd32;
+    }
+    .item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      box-sizing: border-box;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 20px 20px 20px;
+    }
+    .icon {
+      flex: 0 0 60px;
+      width: 60px;
+      padding-right: 20px;
+    }
+    .text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      line-height: 20px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    .name {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .desc {
+      color: rgba(255, 255, 255, 0.3)
+    }
+  }
+}
