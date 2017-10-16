@@ -4,6 +4,7 @@
           :listenScroll="listenScroll"
           @scroll="scroll"
           ref="listview"
+          :probe-type="probeType"
           >
     <ul>
       <li class="list-group" v-for="group in data" ref="listGroup">
