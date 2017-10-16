@@ -1,6 +1,6 @@
 <template>
   <transition name="slide">
-    <music-list :title="title" :bg-image="bgImage"></music-list>
+    <music-list :title="title" :bg-image="bgImage" :songs="songs"></music-list>
   </transition>
 </template>
 
@@ -12,6 +12,11 @@
   import { ERR_OK } from 'api/config'
 
   export default {
+    data () {
+      return {
+        songs: []
+      }
+    },
     computed: {
       title () {
         return this.disc.dissname
