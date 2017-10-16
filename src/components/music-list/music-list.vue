@@ -6,14 +6,14 @@
     <h1 class="title" v-html="title"></h1>
     <div class="bg-image" :style="bgStyle" ref="bgImage">
       <div class="play-wrapper">
-        <div class="play">
+        <div class="play" ref="playBtn" v-show="songs.length>0">
           <i class="icon-play"></i>
           <span class="text">随机播放全部</span>
         </div>
       </div>
       <div class="filter" ref="filter"></div>
     </div>
-    <div class="bg-layer"></div>
+    <div class="bg-layer" ref="layer"></div>
     <scroll class="list"
             :data="songs"
             @scroll="scroll"
@@ -123,10 +123,10 @@
           blur = Math.min(20, percent * 20)
         }
 
-        this.$refs.layer.style[transform] = `translate3d(0, ${translateY}px, 0`
+        this.$refs.layer.style[transform] = `translate3d(0, ${translateY}px, 0)`
         this.$refs.filter.style[backdrop] = `blur(${blur}px)`
 
-        if (newVal < this.minTransalteY) {
+        if (newVal < this.minTranslateY) {
           zIndex = 10
           this.$refs.bgImage.style.paddingTop = 0
           this.$refs.bgImage.style.height = `${RESERVED_HEIGHT}px`
@@ -137,8 +137,8 @@
           this.$refs.playBtn.style.display = ''
         }
 
-        this.$refs.layer.style[transform] = `scale(${scale})`
-        this.$refs.layer.style.zIndex = zIndex
+        this.$refs.bgImage.style[transform] = `scale(${scale})`
+        this.$refs.bgImage.style.zIndex = zIndex
       }
     },
     components: {
